@@ -1,0 +1,110 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {    /*header styling*/
+    background-color: #010120;
+    text-align: center;
+    padding: 20px;
+    border-radius: 0 0 50px 50px ;
+}
+
+nav{
+    padding: 12px;
+    margin: 0, auto;
+}
+ul {    /*ul styling*/
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    display: inline;
+    margin-right: 20px;
+}
+
+a {     /*reference styling*/
+    color: white;
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+
+.content {  /*content styling*/
+    padding: 20px;
+    text-align: center;
+}
+
+section{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.product{
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+h2, .contactUS {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+}
+
+/* signup / log in Page */
+
+footer {    /*footer styling*/
+    background-color: #010120;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-radius: 50px 50px 0 0 ;   
+}
+        /*cursor overlapping styling*/
+.image-container {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    margin: 10px;
+}
+
+.image-container img {
+    
+    transition: filter 0.3s ease-in-out;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    opacity: 0;
+    background: rgba(255, 255, 255, 0.8);
+    transition: opacity 0.3s ease-in-out;
+}
+
+.image-container:hover img {
+    opacity: 0.7%;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}

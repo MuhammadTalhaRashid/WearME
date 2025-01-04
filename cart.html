@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cart</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="home.css">
+<style>
+.rem-btn{
+background: #010120;/*here styling the buttons ,making a grey kind of background*/
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 3px;
+}
+    
+.cart-total{
+    font-size: 26px;
+    font-weight: bold;
+    color: black;
+    margin-top: -2px;/* Adjust the margin to set the distance between the image and total price */
+    margin-bottom: 7px;
+}
+.cart-item {
+    display: flex;
+    align-items: center;/*aligning centrally*/
+    justify-content: center;
+}
+
+.cart-item img {
+    margin-bottom: 5px;
+    margin-right: 20px; /* Adjust the margin to set the distance between the images */
+}
+
+
+.cartacts button {
+    
+    background: #010120;/*here styling the buttons ,making a grey kind of background*/
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px; /* Add margin for separating the buttons */
+    margin-right: 50px;/* Add margin for separating the buttons side-wise */
+}
+.cartacts {
+    position: relative;
+    top: -17px; /* adjusting it to move the buttons up relatively(anything else remains where it was) */
+}
+.cart {
+    text-align: center;/*aligning content centrally*/
+    margin-bottom: 20px;
+}
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+            <!--here giving links to home page, products page, contact page-->
+                <li><a href="home.html">Wear Me</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="choice1.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="cart">
+        <h2>Your Cart Products</h2>
+
+        <!---for Cart Item 1 --->
+        <div class="cart-item">
+            <img src="images/3.jpeg" alt="Product 1" width="250px" height="300px">
+            <div class="item-details">
+                <h3>Product 1</h3>
+                <p>Quantity: 1</p>
+                <p>Price: $10.99</p>
+		<button class="rem-btn">Remove</button>
+            </div>
+        </div>
+
+        <!---for Cart Item 2 --->
+        <div class="cart-item">
+            <img src="images/11.jpeg" alt="Product 2" width="250px" height="300px">
+            <div class="item-details">
+                <h3>Product 2</h3>
+                <p>Quantity: 2</p>
+                <p>Price: $15.99</p>
+		<button class="rem-btn">Remove</button>
+            </div>
+        </div>
+        
+        <!---for Cart Item 3 --->
+        <div class="cart-item">
+            <img src="images/10.jpeg" alt="Product 3" width="250px" height="300px">
+            <div class="item-details">
+                <h3>Product 3</h3>
+                <p>Quantity: 1</p>
+                <p>Price: $8.99</p>
+		<button class="rem-btn">Remove</button>
+            </div>
+        </div>
+
+        <!---for Cart Item 4 --->
+        <div class="cart-item">
+            <img src="images/14.jpeg" alt="Product 4" width="250px" height="300px">
+            <div class="item-details">
+                <h3>Product 4</h3>
+                <p>Quantity: 3</p>
+                <p>Price: $20.99</p>
+                <button class="rem-btn">Remove</button>
+            </div>
+        </div>
+
+        <!---for Cart Item 5 --->
+        <div class="cart-item">
+            <img src="images/28.jpeg" alt="Product 1" width="250px" height="300px">
+            <div class="item-details">
+                <h3>Product 5</h3>
+                <p>Quantity: 1</p>
+                <p>Price: $10.99</p>
+		<button class="rem-btn">Remove</button>
+            </div>
+        </div>
+
+        <!---for Cart Item 6 --->
+        <div class="cart-item">
+            <img src="images/20.jpeg" alt="Product 1" width="250px" height="300px">
+            <div class="item-details">
+                <h3>Product 6</h3>
+                <p>Quantity: 1</p>
+                <p>Price: $10.99</p>
+		<button class="rem-btn">Remove</button>
+            </div>
+        </div>
+
+        <!---for Cart Item 7 --->
+        <div class="cart-item">
+            <img src="images/44.jpeg" alt="Product 1" width="250px" height="300px">
+            <div class="item-details">
+                <h3>Product 7</h3>
+                <p>Quantity: 1</p>
+                <p>Price: $10.99</p>
+		<button class="rem-btn">Remove</button>
+            </div>
+        </div>
+
+        <!---for Cart Item 8 --->
+        <div class="cart-item">
+            <img src="images/55.jpeg" alt="Product 1" width="250px" height="300px">
+            <div class="item-details">
+                <h3>Product 8</h3>
+                <p>Quantity: 1</p>
+                <p>Price: $10.99</p>
+		<button class="rem-btn">Remove</button>
+            </div>
+        </div>
+
+        <div class="cart-total">
+            <p>Total: $56.95</p>
+        </div>
+
+        <div class="cartacts">
+	    <button onclick="window.location.href='payment.html'" class="prochck">Proceed to Checkout</button>
+            <button onclick="window.location.href='choice1.html'" class="cont-shop">Continue Shopping</button>
+        </div>
+    </div>
+
+    <footer>
+        <!--here is what is going to be at the bottom of the page(same at every page)-->
+        <p>&copy; 2023 Wear Me. All rights reserved. Wear Me</p>
+    </footer>
+</body>
+
+</html>

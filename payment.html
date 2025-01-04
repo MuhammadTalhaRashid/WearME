@@ -1,0 +1,67 @@
+<style>
+.placeorderBtn { /*here styling the place and order button with a kind of dark grey background and curving its borders*/
+	    margin-top: 8px;
+           
+	    background: #010120;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+</style>
+<head>      <!---loading default theme--->
+    <link rel="stylesheet" href="login1.css">
+    <link rel="stylesheet" href="home.css">
+    <title>Payment</title>
+ </head>
+ 
+ <header>
+     <nav>
+         <ul>
+        <!--here giving links to home page, products page, contact page-->
+            <li><a href="home.html">Wear Me</a></li>
+             <li><a href="home.html">Home</a></li>
+             <li><a href="choice1.html">Products</a></li>
+             <li><a href="contact.html">Contact</a></li>
+         </ul>
+     </nav>
+ </header>
+
+<body>
+        <div class="formBox">
+            <!---here giving the heading of payment--->
+        <div class="p" style="margin-left: 35px;">Payment</div>
+        <div class="txt">Welcome to the payment interface</div>
+        <form id="information" class="inputs">
+            <!--here taking all the required information of user by making labels and then adding placeholders for input-->
+            <label for="name">Name:</label>
+            <input type="text" id="name" class="inputField" placeholder="Enter your name" required>
+
+            <label for="cont">Contact Number:</label>
+            <input type="text" id="contact" class="inputField" placeholder="Enter your contact number" required>
+
+            <label for="eml">Email Address:</label>
+            <input type="text" id="email" class="inputField" placeholder="Enter your Email address" required>
+
+            <label for="ship">Shipping Address:</label>
+            <input type="text" id="shipping" class="inputField" placeholder="Shipping address" required>
+
+            <label for="pay">Credit card number:</label>
+            <input type="text" id="payment" class="inputField" placeholder="Credit card number" required>
+
+	    <label for="pay">Credit card password:</label>
+            <input type="text" id="payment" class="inputField" placeholder="Credit card password" required>
+            <!---making a button named place and order which will take to home page-->
+            <button type="placeorder" class="placeorderBtn" style="margin-left: 70px;"><a href="home.html">Place an order</a></button>
+        </form>
+    </div>
+
+    <p style="text-align: center;"> afg</p>
+    <p style="text-align: center;"> afg</p>
+
+    <footer>
+        <!--here is what is going to be at the bottom of the page(same at every page)-->
+        <p> &copy; 2023 Wear Me. All rights reserved. Wear Me</p>
+    </footer>
+</body>
